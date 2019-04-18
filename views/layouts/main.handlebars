@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
-		<title>BURGERS!!!</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="/assets/js/burgers.js"></script>
-	</head>
-	<body>
-		{{{ body }}}
-	</body>
+	<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+	<title>BURGERS!!!</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+	{{{ body }}}
+	{{!-- I moved this line from the head to the bottom of the body...That fixed the issue....! They recommend to always
+	put your javascript at the end of the body. --}}
+	<script src="/assets/js/burgers.js"></script>
+</body>
+
 </html>
